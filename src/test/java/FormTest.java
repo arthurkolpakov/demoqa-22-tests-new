@@ -28,6 +28,19 @@ public class FormTest {
         $("#userEmail").setValue("kolpakovartur91@gmail.com");
         $("#genterWrapper").$(byText("Male")).click();
         $("#userNumber-label").setValue("9003308519");
+        $("#dateOfBirth-label").setValue("02 Apr 1991");
+        $("react-datepicker__month-select").selectOption("April");
+        $("react-datepicker__year-select").selectOption("1991");
+        $("react-datepicker__day react-datepicker__day--002 react-datepicker__day--selected").click();
+        $("#subjects-label").setValue("QA");
+        $("label[for=hobbies-checkbox-1]").click();
+        $("#uploadPicture").uploadFromClasspath("101.png");
+
+
+
+
+
+
 
 
 
