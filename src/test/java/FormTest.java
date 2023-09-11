@@ -34,7 +34,7 @@ public class FormTest {
         $("react-datepicker__day react-datepicker__day--002 react-datepicker__day--selected").click();
         $("#subjects-label").setValue("QA");
         $("label[for=hobbies-checkbox-1]").click();
-        $("#uploadPicture").uploadFromClasspath("101.png");
+        //Как загрузить изобра
 
 
 
