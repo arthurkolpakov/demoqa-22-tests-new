@@ -32,6 +32,7 @@ public class FormTest {
         //Пока не знаю как в папку resources добавить картинку
         $("#currentAddress-label").setValue("Cheboksary");
         $("react-select-3-input]").setValue("NCR").click();
+
         $("#submit").click();
 
 
