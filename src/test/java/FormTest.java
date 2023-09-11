@@ -6,13 +6,8 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-public class FormTest {
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browserSize = "1920x1080";
-    }
 
+public class FormTest {
     @BeforeAll
     static void beforeAll() {
         Configuration.baseUrl = "https://demoqa.com";
@@ -34,7 +29,16 @@ public class FormTest {
         $("react-datepicker__day react-datepicker__day--002 react-datepicker__day--selected").click();
         $("#subjects-label").setValue("QA");
         $("label[for=hobbies-checkbox-1]").click();
-        //Как загрузить изобра
+        //Пока не знаю как в папку resources добавить картинку
+        $("#currentAddress-label").setValue("Cheboksary");
+        $("react-select-3-input]").setValue("NCR").click();
+        $("#submit").click();
+
+
+
+
+
+
 
 
 
