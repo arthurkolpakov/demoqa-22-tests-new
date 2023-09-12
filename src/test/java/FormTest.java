@@ -32,7 +32,21 @@ public class FormTest {
         $("#uploadPicture").uploadFromClasspath("101.jpg");
         $("#currentAddress-label").setValue("Cheboksary");
         $("react-select-3-input]").setValue("NCR").click();
+        $("react-select-3-input]").setValue("Delhi").click();
         $("#submit").click();
+
+        $(".table-responsive").shouldHave(
+                text("Капи Бара"),
+                text("capibara@gmail.com"),
+                text("Male"),
+                text("1234567890"),
+                text("25 November,2000"),
+                text("Arts"),
+                text("Sports, Reading, Music"),
+                text("capybara.jpg"),
+                text("Пруд с апельсинами"),
+                text("NCR Delhi"));
+
 
 
 
