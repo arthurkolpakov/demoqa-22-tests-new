@@ -29,10 +29,9 @@ public class FormTest {
         $("react-datepicker__day react-datepicker__day--002 react-datepicker__day--selected").click();
         $("#subjects-label").setValue("QA");
         $("label[for=hobbies-checkbox-1]").click();
-        //Пока не знаю как в папку resources добавить картинку
+        $("#uploadPicture").uploadFromClasspath("101.jpg");
         $("#currentAddress-label").setValue("Cheboksary");
         $("react-select-3-input]").setValue("NCR").click();
-        $("#uploadPicture").uploadFromClasspath("101.jpg");
         $("#submit").click();
 
 
